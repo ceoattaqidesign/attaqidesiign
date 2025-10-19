@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properti Indah - Jual & Sewa Rumah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+     <header>
+        <div class="logo-container">
+    <img src="LOGO ATTAQI.png" alt="Logo Properti Indah">
+</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="#produk-kita">PRODUK/JASA</a></li>
+                <li><a href="tentang-kami.html">TENTANG KAMI</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+                <li><a href="lokasi.html">LOKASI</a></li>
+             
+            </ul>
+        </nav>
+        <div class="login-buttons">
+        <a href="login.html" class="btn-header login">LOGIN</a>
+        <a href="daftar.html" class="btn-header daftar">DAFTAR</a>
+    </div>
+    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Attaqidesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="split-login-wrapper">
+        <div class="login-container">
+            
+            <div class="promo-column">
+                <div class="promo-content">
+                    <img src="LOGO ATTAQI.png" alt="Attaqidesign Logo Putih" class="promo-logo">
+                    <h3>
+                        Dapatkan Desain Terbaik,<br>
+                        Murah, dan Cepat.
+                    </h3>
+                    <p>
+                        Masuk untuk memulai proyek desain Anda dan melihat semua listing produk/jasa kami.
+                    </p>
+                    
+                    <div class="illustration-area">
+                        <img src="FAQ.png" alt="Ilustrasi Desainer" class="main-illustration">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-column">
+                <div class="form-header">
+                    <p class="language-select">ID (Indonesia) ▼</p>
+                </div>
+                
+                <h2 class="form-title">Masuk ke Akun Anda</h2>
+
+                <form action="dashbord.html" method="POST" class="login-form">
+                    
+                    <div class="input-group">
+                        <label for="email">Email atau Username</label>
+                        <input type="text" id="email" name="email" placeholder="contoh: qwertyuiop@email.com" required>
+                    </div>
+                    
+                    <div class="input-group password-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+                        <i class="fas fa-eye toggle-password" onclick="togglePassword()"></i>
+                    </div>
+                    
+                    <div class="options-row">
+                        <label class="checkbox-container">
+                            <input type="checkbox"> Ingat Saya
+                            <span class="checkmark"></span>
+                        </label>
+                        <a href="#" class="forgot-password">Lupa Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">LOGIN</button>
+                </form>
+
+                <div class="separator">ATAU MASUK DENGAN</div>
+
+                <div class="social-login">
+                    <a href="https://www.instagram.com/attaaqi_25?igsh=MWp4aDR5a3pjMzZsZw" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ngeteh.asuk.3762" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com/@inamattaqi-f8k?si=eCsjrOGFLjdngRna" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/qr/JZ5S7ZFLNYX5H1" class="social-icon twitter"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                
+                <p class="register-link">
+                    Belum punya akun? <a href="daftar.html">Daftar Sekarang</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.querySelector('.toggle-password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+    </script>
+        <footer>
+    <div class="footer-container" id="kontak-footer"> 
+        
+        <div class="footer-kolom brand-info">
+            <img src="LOGO ATTAQI.png" alt="Logo Properti Indah" class="footer-logo">
+            <p class="brand-tagline">Butuh desain? Bagus, Murah, dan Cepat... Kami bukan dukun, tapi hasilnya ajaib!</p>
+        </div>
+
+        <div class="footer-kolom">
+            <h4>Fitur Utama</h4>
+            <ul>
+                <li><a href="#">Jual Properti</a></li>
+                <li><a href="#">Sewa Properti</a></li>
+                <li><a href="#">Kredit Rumah</a></li>
+                <li><a href="#">Konsultasi Properti</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-kolom">
+            <h4>Perusahaan</h4>
+            <ul>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a href="#">Karir</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+                <li><a href="#">Lokasi Kantor</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-kolom">
+            <h4>Dukungan</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-kolom media-sosial">
+            <h4>Media Sosial</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/ngeteh.asuk.3762" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/attaaqi_25?igsh=MWp4aDR5a3pjMzZsZw==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://youtube.com/@inamattaqi-f8k?si=eCsjrOGFLjdngRna" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
+                <li><a href="https://wa.me/qr/JZ5S7ZFLNYX5H1" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <div class="footer-copyright">
+        &copy; 2025 SEMUA DIUSAHAKAN | Semua Hak Dilindungi.
+    </div>
+</footer>
+</body>
+</html>
+</body>
+</html>
